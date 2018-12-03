@@ -55,6 +55,4 @@ circleY=circleY+10;
 
 
 
-//save function
-save("CHRISTOPHER.REFERENCE.Variables.Drawing.png");
-}
+
