@@ -1,4 +1,4 @@
-/* @pjs preload="CHRISTOPHER_Thank_You_Code_png"; */ 
+
 int circleY;
 
 PImage KD;
