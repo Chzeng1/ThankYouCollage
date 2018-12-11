@@ -1,5 +1,7 @@
 int circleY;
 
+PImage KD;
+PImage KB;
 PImage Prius;
 PImage Basketball;
 
@@ -9,11 +11,15 @@ void setup(){
 
 Prius= loadImage("Prius.png");
 Basketball= loadImage("Basketball.png");
+KD= loadImage("KD 2.png");
+KB= loadImage("KOBE.png");
 }
 void draw() {
   background(0,0,255);
   image(Prius, mouseX-90, mouseY-10, 300,300);
   image(Basketball, 600,circleY,100,100);
+  image(KB, 350, 200, 250, 200);
+ image(KD, 250, 180, 300, 300);
   if(circleY > 600)
   {
     circleY=80;
@@ -21,13 +27,13 @@ void draw() {
  
   
   textSize(75);
-  fill(0,0,0);
-  text("NBA",300,500);
+  fill(random(0,255));
+  text("NBA",300,550);
   
   fill(255,0,0);
-  text("2K",440,500);
+  text("2K",430,550);
   
-  fill(random(0,255));
+  fill(153,76,0);
   ellipse(200,350,200,200);
   fill(255,153,51);
   ellipse(200,350,185,185);
@@ -49,10 +55,4 @@ void draw() {
   
   
 circleY=circleY+10;
-
-
-
-
-
-
-
+}
